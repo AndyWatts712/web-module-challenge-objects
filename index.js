@@ -68,6 +68,9 @@ for (i = 0; i < reviews.length; i++) {
 
 /* Task 5: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 
+reviews.push({name: "Andy", rating: 4, feedback: "This place is a dive. I like it."});
+
+console.log(reviews);
 
 /* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
 

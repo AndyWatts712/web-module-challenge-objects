@@ -6,11 +6,14 @@ const breakfastBurrito = {name: "Breakfast Burrito", price: 16, category:"Breakf
 
 /* Task 1a: write a function to return more menu items with the same format as the items above. */
 
-function createMenuItem(name, cost, category){
-    /* Code here */
-}
+// function createMenuItem(name, cost, category){
+//     return { name, cost, category};
+// }
 
 /* Task 1b: use your function to create 3 more menu items. You may add any items to the menu that you'd like */
+// console.log(createMenuItem( "Tacos", 8, "Lunch"));
+// console.log(createMenuItem( "Wings", 12, "Lunch"));
+// console.log(createMenuItem( "Nachos", 15, "Lunch"));
 
 
 
@@ -23,8 +26,15 @@ Your method should accept:
 and should return a number. 
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
-
-
+// burger.discount = function(string){
+//   if (string === "teacher" || string === "student") {
+//     return burger.price * .75;
+//   } else{
+//     return burger.price * .9;
+//   }
+// }
+// console.log(burger.discount("teacher"));
+// console.log(burger.discount("Civilian"));
 
 ///////////////Reviews (MVP)///////////////////
 
@@ -39,10 +49,16 @@ const reviews = [{name: "Daniela", rating: 5, feedback:"Beautiful atmosphere and
 ]
 
 /* Task 4: Console.log just Julius' feedback */
+for (let i = 0; i< reviews.length; i++){
+  if (reviews[i].name === "Julius") {
+    console.log(reviews[i].feedback);
+  }
+}
 
 
 /* Task 5: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
-
+reviews.push({name: "Andy", rating: 3, feedback: "Whatever."});
+console.log(reviews);
 
 /* Task 6: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
 

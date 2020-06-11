@@ -177,10 +177,22 @@ The returned object should have the following characteristics:
          (1) causes the odometer in the object to be increased by the distance,
          (2) returns the updated value of the `odometer`.
 */
-
+// let newObj = {};
+// function carMaker(miles) {
+//   newObj = {
+//     odometer: miles,
+//     drive: function (dist) {
+//       this.odometer = miles + dist;
+//       return this.odometer;
+//     }
+//   }
+//   return newObj;
+// }
+// console.log(carMaker(1000));
+// console.log(newObj.drive(50));
+// How do you call a function in an unamed object?
 
 const newObj = {};
-
 function carMaker(miles) {
   newObj.odometer = miles;
   newObj.drive = function (dist) {
